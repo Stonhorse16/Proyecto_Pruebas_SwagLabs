@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 if not os.path.exists("../evidencias"):
     os.makedirs("../evidencias")
 
-print("🔹 Iniciando Script 1 (CP-01): Login Exitoso...")
+print("Iniciando Script 1 (CP-01): Login Exitoso...")
 
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -46,4 +46,5 @@ except Exception as e:
 finally:
 
     driver.quit()
+
     print(" Fin de la prueba.")
